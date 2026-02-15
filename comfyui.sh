@@ -27,4 +27,4 @@ wget -O /opt/ComfyUI/models/upscale_models/RealESRGAN_x4.pth \
 
 # TAESD: Tiny VAE for SDXL (Required for Node 13)
 wget -O /opt/ComfyUI/models/vae_approx/taesdxl.safetensors \
-    "https://github.com/madebyollin/taesd/raw/main/taesdxl_encoder.safetensors"
+    "https://github.com/madebyollin/taesd/raw/main/taesdxl_decoder.safetensors"
