@@ -26,5 +26,10 @@ wget -O /opt/ComfyUI/models/upscale_models/RealESRGAN_x4.pth \
     "https://huggingface.co/ai-forever/Real-ESRGAN/resolve/main/RealESRGAN_x4.pth"
 
 # TAESD: Tiny VAE for SDXL (Required for Node 13)
-wget -O /opt/ComfyUI/models/vae_approx/taesdxl.safetensors \
-    "https://github.com/madebyollin/taesd/raw/main/taesdxl_decoder.safetensors"
+mkdir -p /opt/ComfyUI/models/vae_approx
+wget -O /opt/ComfyUI/models/vae_approx/taesdxl_decoder.pth \
+    "https://github.com/madebyollin/taesd/raw/main/taesdxl_decoder.pth"
+
+# Install custom nodes
+cd /opt/ComfyUI/custom_nodes
+git clone https://github.com/neocrz/comfyui-usetaesd.git
